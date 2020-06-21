@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+
+<body onload="populateTable('Order=Date')">
+<header>
+
+	<div class="row menuBorder" style="height:73px; min-width:800px;border-width:38px">
+		<nav> 
+			
+			<div class="col-2" style="padding:0">
+				<div>
+					<a href="title_page.html"><img src="websitelogo.png" style="height:73px"></a>
+				</div>
+            </div> 
+            
+            <div class="col-3">
+                <div id="searchBarDiv" style="padding-left: 4em">
+                    <input type="text" placeholder="Search arguments" id="search-bar">
+                    <input type="button" value="Search" onclick="search()">
+                </div>
+            </div> 
+
+            <div class="col-1">
+			</div>
+            
+            <div class="col-6 menu" style="height:100%">
+                <ul class="nav">
+                    <li id="logBtn"><a href="login_page.html">Login/Signup</a></li>
+                    <li id="argBtn"><a href="createArgument.html">Create Argument</a></li>
+                    <li id="acctBtn"><a href="account_page.html">My Account</a></li>
+                    <li><a href="title_page.html">Home</a></li>
+                </ul>
+            </div>
+            
+		</nav>
+    </div>
+    
+</header>
+
+<!-- small space between nav and next row -->
+<div class="row">
+</div>
+
+<!-- row for filter buttons -->
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-3" style="padding-top: 2em; padding-bottom: 0; margin: 0">
+        <h1>Today's Specials</h1>
+    </div>
+
+    <div class="col-2">
+    </div>
+
+    <div class="col-5" style="height: 73px; padding-top: 2.1em">
+        <ul id="sort">  
+            <li onclick="populateTable('Order=Date')"><a href="#">Newest</a></li>
+            <li onclick="populateTable('Order=Comments')"><a href="#">Most Comments</a></li>
+            <li onclick="populateTable('Order=Votes')"><a href="#">Most Votes</a></li>
+        </ul>
+    </div> 
+
+    <div class="col-1">
+    </div> 
+
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-1">
+    </div> 
+
+    <div class="col-10" style="padding-top: 0;">
+        <table class="tborder" style="max-height: 500px">
+            <thead>
+                <tr>
+                    <th>Arguments</th>
+                    <th>User</th>
+                    <th>Replies</th>
+                    <th>Votes</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="threadbody">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-1">
+    </div> 
+
+</div>
+
+
+<script type="text/javascript" src="/STB/requestHandler.js"></script>
+<script type="text/javascript" src="/STB/title_page.js"></script>
+<script type="text/javascript" src="/STB/changeNavLoginButton.js"></script>
+</body>
+</html>

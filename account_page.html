@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <title>My Account</title>    
+</head>
+
+<body onload="loadUser()">
+<header>
+	<div class="row menuBorder" style="height:73px; min-width:800px;border-width:38px">
+		<nav> 
+			
+			<div class="col-2" style="padding:0">
+				<div>
+					<a href="title_page.html"><img src="websitelogo.png" style="height:73px"></a>
+				</div>
+            </div> 
+            
+            <div class="col-3">
+            </div> 
+
+            <div class="col-1">
+			</div>
+            
+            <div class="col-6 menu" style="height:100%">
+                <ul class="nav">
+                    <li id="logBtn"><a href="login_page.html">Login/Signup</a></li>
+                    <li id="argBtn"><a href="createArgument.html">Create Argument</a></li>
+                    <li id="acctBtn"><a href="account_page.html">My Account</a></li>
+                    <li><a href="title_page.html">Home</a></li>
+                </ul>
+            </div>
+            
+		</nav>
+    </div>
+</header>
+
+<h1 id="username-display" style="padding-left: 3em; padding-top: .75em"></h1>
+
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-3" style="padding-bottom: 0;">
+        <h3>Arguments</h3>
+    </div>
+
+    <div class="col-8">
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-1">
+    </div> 
+
+    <div class="col-10">
+        <table class="tborder">
+            <thead>
+                <tr>
+                    <th>Thread</th>
+                    <th>Replies</th>
+                    <th>Votes</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            
+            <tbody id="argsBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-1">
+    </div> 
+
+</div>
+
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-3" style="padding-bottom: 0;">
+        <h3>Comments</h3>
+    </div>
+
+    <div class="col-8">
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-10">
+        <table class="tborder">
+            <thead>
+                <tr>
+                    <th>Comment</th>
+                    <th>Thread</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="commentsBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-1">
+    </div>
+    
+</div>
+
+
+<script type="text/javascript" src="/STB/requestHandler.js"></script>
+<script type="text/javascript" src="/STB/account_page.js"></script>
+<script type="text/javascript" src="/STB/changeNavLoginButton.js"></script>
+
+</body>
+</html>

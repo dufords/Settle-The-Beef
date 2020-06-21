@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/STB/styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <title>Create Argument</title>
+</head>
+
+<body>
+<header>
+	<div class="row menuBorder" style="height:73px; min-width:800px;border-width:38px">
+		<nav> 
+			
+			<div class="col-2" style="padding:0">
+				<div>
+					<a href="title_page.html"><img src="websitelogo.png" style="height:73px"></a>
+				</div>
+            </div> 
+            
+            <div class="col-3">
+
+            </div> 
+
+            <div class="col-1">
+			</div>
+            
+            <div class="col-6 menu" style="height:100%">
+                <ul class="nav">
+                    <li id="logBtn"><a href="login_page.html">Login/Signup</a></li>
+                    <li id="argBtn"><a href="createArgument.html">Create Argument</a></li>
+                    <li id="acctBtn"><a href="account_page.html">My Account</a></li>
+                    <li><a href="title_page.html">Home</a></li>
+                </ul>
+            </div>
+            
+		</nav>
+    </div>
+</header>
+
+<div class="row"></div>
+
+<form onsubmit="return createArgument()" id="createArgForm">
+
+    <div class="row" style="padding: 2em">
+        <div class="col-3">
+        </div>
+
+        <div class="col-6" id="titleDiv">
+            <input type="text" style="width: 300px" name="" id="argument-title" placeholder="Title" required >
+        </div>
+
+        <div class="col-3">
+        </div>
+    </div>
+
+    <div class="row" style="padding: 3em">
+        <div class="col-2">
+        </div>
+
+        <div class="col-2">
+            <input type="text" style="width: 230px" name="" id="argument-left" placeholder="Left Side" required>
+        </div>
+
+        <div class="col-4">
+        </div>
+
+        <div class="col-2">
+            <input type="text" style="width: 230px" name="" id="argument-right" placeholder="Right Side" required>
+        </div>
+
+        <div class="col-2">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <input type="submit" name="" value="SETTLE THE BEEF" id="postArgBtn">
+        </div>
+        <div class="col-3">
+        </div>
+    </div>
+    
+</form>
+
+<script type="text/javascript" src="/STB/requestHandler.js"></script>
+<script type="text/javascript" src="/STB/createArgument.js"></script>
+<script type="text/javascript" src="/STB/changeNavLoginButton.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <title>Argument</title>
+</head>
+
+<body onload="loadArgumentPage()">
+<header>
+	<div class="row menuBorder" style="height:73px; min-width:800px;border-width:38px">
+		<nav> 
+			
+			<div class="col-2" style="padding:0">
+				<div>
+					<a href="title_page.html"><img src="websitelogo.png" style="height:73px"></a>
+				</div>
+            </div> 
+            
+            <div class="col-3">
+            </div> 
+
+            <div class="col-1">
+			</div>
+            
+            <div class="col-6 menu" style="height:100%">
+                <ul class="nav">
+                    <li id="logBtn"><a href="login_page.html">Login/Signup</a></li>
+                    <li id="argBtn"><a href="createArgument.html">Create Argument</a></li>
+                    <li id="acctBtn"><a href="account_page.html">My Account</a></li>
+                    <li><a href="title_page.html">Home</a></li>
+                </ul>
+            </div>
+            
+		</nav>
+    </div>
+</header>
+
+<div class="row" style="height: 30px">
+</div>
+
+<div class="row">
+
+    <div class="col-3">
+        <h3 id="host-user" style="padding-left: 2em;">Username</h3>
+    </div>
+
+    <div class="col-1">
+    </div>
+    
+    <div class="col-4" id="argTitleDiv">
+        <h1 id="argument-title">Argument Title</h1>
+    </div>
+
+    <div class="col-1">
+    </div>
+	
+	<div class="col-3">
+        <h3 id="date" style="color: #fffff0">Date</h3>
+    </div>
+
+</div>
+
+<div class="row" style="background-color: black; height: 10px">
+    <div class="col-12">
+    </div>
+</div>
+
+<!--
+<div class="row">
+
+    <div class="col-3">
+    </div>
+
+    <div class="col-3">
+    </div>
+
+</div>
+-->
+
+<div class="row" style="padding-top: 1em">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-2">
+        <h2 id="argument-left" style="text-align: center">Left Argument</h2>
+    </div>
+
+    <div class="col-6">
+    </div>
+
+    <div class="col-2">
+        <h2 id="argument-right" style="text-align: center">Right Argument</h2>
+    </div>
+
+    <div class="col-1">
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-1">
+        <h5 id="left-votes" style="margin-top: 0em; text-align: right; font-size: large; color: #fffff0;">Left Votes</h5>
+    </div>
+    <div class="col-1">
+        <input type="button" name="" id="vote-left" onclick="voteLeft()" value="vote">
+    </div>
+
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+    </div>
+    <div class="col-2">
+    </div>
+
+    <div class="col-1">
+        <h5 id="right-votes" style="margin-top: 0em; text-align: right; font-size: large; color: #fffff0;">Right Votes</h5>
+    </div>
+    <div class="col-1">
+        <input type="button" name="" id="vote-right" onclick="voteRight()" value="vote">
+    </div>
+
+    <div class="col-1">
+    </div>
+
+</div>
+
+
+<div class="row" style="padding-top: 4em;">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-3" style="padding-top:1.2em">
+        <form onsubmit="return createNewComment()">
+            <input type="text" name="" placeholder="Comment" id="comment" style="width: 240px" required>
+            <input type="submit" name="" value="Post">
+        </form>
+    </div>
+
+    <div class="col-4">
+        <h2 style="text-align: center; padding-bottom: 0; margin: 0">Comment Section</h2>
+    </div>
+
+    <div class="col-4">
+    </div>
+
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-1">
+    </div>
+
+    <div class="col-10">
+        <table class ="tborder">
+            
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody id="comment-section">
+                <tr>
+                    <td>
+                        <h5><a href="#">Username</a></h5>
+                        <p>Comment</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-1">
+    </div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript" src="/STB/requestHandler.js"></script>
+<script type="text/javascript" src="/STB/argument_page.js"></script>
+<script type="text/javascript" src="/STB/changeNavLoginButton.js"></script>
+
+</body>
+</html>

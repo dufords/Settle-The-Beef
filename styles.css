@@ -1,0 +1,279 @@
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+	font-weight: 400;
+    background-color: #3b3b3b;
+	background-repeat: no-repeat;
+    padding: 0;
+	margin: 0;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.test {
+	border: solid 2pt red;
+}
+
+.menuBorder {
+	background-color: #2196f3;
+	border-bottom: solid #9a0606;
+}
+
+a {
+    color: #ffffffd7;;
+}
+
+h1{
+    text-decoration: underline overline;
+    color: #fffff0;
+}
+
+h3, h2 {
+    color: #fffff0;
+    margin-bottom: 0;
+}
+
+
+/*
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+
+
+
+
+
+/*
+-------
+  NAV
+-------
+*/
+.menu {
+	padding: 0;
+	height: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  min-width: 400px;
+  float: right;
+  color: #fffff0;
+}
+
+.menu li {
+    vertical-align: center;
+	float: right;
+	background-color: #000000;
+	width: 25%;
+	height: 100%;
+    height:73px;
+    display: table-cell;
+    text-align: center;
+}
+
+.menu li a{
+    padding: 1.59em;
+    display: block;
+    width: 100%;
+    height: inherit;
+    text-decoration: none;
+    color: #fffff0;
+}
+
+.menu li:hover {
+  background-color: #fffff0;
+}
+
+.menu a:hover {
+    color: #000000;
+}
+
+#searchBarDiv {
+    display: table;
+    padding-top: .5em;
+}
+
+
+/*
+----------
+  FILTER
+----------
+*/
+
+#sort{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    min-width: 400px;
+    float: right;
+    color: #fffff0;
+    padding-top: .6em;
+}
+
+#sort li {
+    vertical-align: center;
+	float: right;
+	background-color: #000000;
+	width: 25%;
+    height:40px;
+    display: table-cell;
+    text-align: center;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#sort li:hover {
+    background-color: #fffff0;
+}
+
+#sort li a{
+    padding-top: .6em;
+    display: block;
+    width: 100%;
+    height: inherit;
+    text-decoration: none;
+    color: #fffff0;
+}
+
+#sort li a:hover{
+    color: #000000;
+}
+
+
+
+/*
+//
+// tables
+//
+*/
+
+th {
+    background-color: rgb(0, 0, 0);
+}
+
+.tborder td {
+    min-width: 50px;
+}
+
+.tborder tr {
+    height: 47px;
+}
+
+.tborder {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tborder, th, td {
+    border: 1px solid black;
+
+}
+
+.tborder th, .tborder td{
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.tborder th{
+    background-color: #1d1d1d;
+    color: #ffffffd7;
+}
+.tborder td{
+    background-color: #9a0606;
+    color: #ffffffd7;
+}
+
+
+/*
+//
+// create argument
+//
+*/
+#argument-title {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#postArgBtn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 20em;  
+    height: 5em;
+    background-color: #9a0606;
+    color: #fffff0;
+    font-size: larger;
+}
+
+#loginForm {
+    background-color: #2196f3;
+    padding: 30px;
+    padding-bottom: 3.5em;
+    border-radius: 30px;
+}
+
+#signupForm {
+    background-color: #9a0606;
+    padding: 30px;
+    padding-bottom: 3.5em;
+    border-radius: 30px;
+}
+
+
+
+/*
+//
+// argument page
+//
+*/
+
+#argTitleDiv h1 {
+    text-align: center;
+}
+
+

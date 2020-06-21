@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <title>Log In</title>
+</head>
+
+<body>
+<header>
+	<div class="row menuBorder" style="height:73px; min-width:800px;border-width:38px">
+		<nav> 
+			
+			<div class="col-2" style="padding:0">
+				<div>
+					<a href="title_page.html"><img src="websitelogo.png" style="height:73px"></a>
+				</div>
+            </div> 
+            
+            <div class="col-3">
+            </div> 
+
+            <div class="col-1">
+			</div>
+            
+            <div class="col-6 menu" style="height:100%">
+                <ul class="nav">
+                    <li id="logBtn"><a href="login_page.html">Login/Signup</a></li>
+                    <li id="argBtn"><a href="createArgument.html">Create Argument</a></li>
+                    <li id="acctBtn"><a href="account_page.html">My Account</a></li>
+                    <li><a href="title_page.html">Home</a></li>
+                </ul>
+            </div>
+            
+		</nav>
+    </div>
+</header>
+
+<div class="row" style="height: 5em">
+</div>
+
+<div class="row">
+
+    <div class="col-2">
+    </div>
+
+    <div class="col-2">
+        <div class="loginbox">
+            <h1 style="text-align: center;">Login</h1>
+            <form onsubmit="return logIn(true,null,null)" id="loginForm">
+                <p>Username</p>
+                <input type="text" name="" placeholder="Username" id="username">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Password" id="password" autocomplete="on">
+                <input type="submit" style="margin-top: 25px" name="" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <div class="col-4">
+    </div>
+
+    <div class="col-2">
+        <div class="signupbox">
+            <h1 style="text-align: center;">Sign Up</h1>
+            <form onsubmit="return createUser()" id="signupForm">
+                <p>Username</p>
+                <input type="text" name="" placeholder="Username" id="usernameSign">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Password" id="passwordSign" autocomplete="on">
+                <input type="submit" style="margin-top: 25px" id="signup_button" name="" value="Sign Up">
+            </form>
+    
+        </div>
+    </div>
+
+    <div class="col-2">
+    </div>
+
+</div>
+
+
+<!--
+<div class="row">
+
+    <div class="col-3">
+    </div>
+
+    <div class="col-3">
+    </div>
+
+</div>
+-->
+
+<script type="text/javascript" src="/STB/requestHandler.js"></script>
+<script type="text/javascript" src="/STB/login_page.js"></script>
+<script type="text/javascript" src="/STB/changeNavLoginButton.js"></script>
+
+</body>
+</html>
