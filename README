@@ -1,10 +1,10 @@
-Settle-The-Beef
+# Settle-The-Beef
 Web Development Final Project
 
-Installation
+## Installation
 Install XAMPP on your device
 
-Usage
+## Usage
 Place all files in a folder 'STB' in C:\xampp\htdocs
 Place all .php files in a folder 'php' in ..\STB
 
